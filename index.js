@@ -1,8 +1,8 @@
 let getDayBirth, getMonthBirth, getYearBirth, gender;
 
 function getInput() {
-let getDayBirth = document.getElementById("day-of-birth").value
-let getMonthBirth = document.getElementById("month-of-birth").value
+let getDayBirth = parseInt(document.getElementById("day-of-birth").value);
+let getMonthBirth = parseInt(document.getElementById("month-of-birth").value);
 let getYearBirth = document.getElementById("year-of-birth").value
 let male = document.getElementById("male-gender").value
 let Female = document.getElementById("female-gender").value
