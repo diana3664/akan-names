@@ -6,7 +6,6 @@ function getInput() {
  getYearBirth = document.getElementById("year-of-birth").value
 let male = document.getElementById("male-gender").value
 let Female = document.getElementById("female-gender").value
-let day0fWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
 formular =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7 ;
@@ -21,6 +20,7 @@ let CC, MM, DD, YY;
 function calculate() {
   let Man = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   let Woman = ["Akosua", "Adowoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+  let day0fWeekArr = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 }
 
