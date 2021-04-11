@@ -3,6 +3,7 @@ var getMonthBirth = document.getElementById("month-of-birth").value
 var getYearBirth = document.getElementById("year-of-birth").value
 var male = document.getElementById("male-gender").value
 var Female = document.getElementById("female-gender").value
+var day0fWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 
 formular =  ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7 ;
