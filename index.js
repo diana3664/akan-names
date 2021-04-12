@@ -56,31 +56,31 @@ function getInput() {
         case "Male":
           if (d == 0 || d == -0) {
               // console.log(`Day of birth: ${day0fWeekArr[0]} and your Akan name is ${masculine_names[0]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Monday : your Akan name is " + masculine_names[0];
+              document.getElementById('results').textContent = "Your Birthday was on a Monday : your Akan name is " + masculine_names[0];
               return false;
             }else if (d == 1 || d == -1) {
               // console.log(`Day of birth: ${day0fWeekArr[1]} and your Akan name is ${masculine_names[1]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Tuesday : your Akan name is " + masculine_names[1];
+              document.getElementById('results').textContent = "Your Birthday was on a Tuesday : your Akan name is " + masculine_names[1];
 
             }else if (d == 2 || d == -2) {
               // console.log(`Day of birth: ${day0fWeekArr[2]} and your Akan name is ${masculine_names[2]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Wednesday : your Akan name is " + masculine_names[2];
+              document.getElementById('results').textContent = "Your Birthday was on a Wednesday : your Akan name is " + masculine_names[2];
 
             }else if (d == 3 || d == -3) {
               // console.log(`Day of birth: ${day0fWeekArr[3]} and your Akan name is ${masculine_names[3]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Thursday : your Akan name is " + masculine_names[3];
+              document.getElementById('results').textContent = "Your Birthday was on a Thursday : your Akan name is " + masculine_names[3];
 
             }else if (d == 4 || d == -4) {
               // console.log(`Day of birth: ${day0fWeekArr[4]} and your Akan name is ${masculine_names[4]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Friday : your Akan name is " + masculine_names[4];
+              document.getElementById('results').textContent = "Your Birthday was on a Friday : your Akan name is " + masculine_names[4];
 
             }else if (d == 5 || d == -5) {
               // console.log(`Day of birth: ${day0fWeekArr[5]} and your Akan name is ${masculine_names[5]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Saturday : your Akan name is " + masculine_names[5];
+              document.getElementById('results').textContent = "Your Birthday was on a Saturday : your Akan name is " + masculine_names[5];
 
             }else if (d == 6 || d == -6) {
               // console.log(`Day of birth: ${day0fWeekArr[6]} and your Akan name is ${masculine_names[6]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Sunday : your Akan name is " + masculine_names[6];
+              document.getElementById('results').textContent = "Your Birthday was on a Sunday : your Akan name is " + masculine_names[6];
 
             }else if (d >= 7) {
               alert(`Index out of bounds: ${d}`);
@@ -91,31 +91,31 @@ function getInput() {
       case "Female":
           if (d == 0 || d == -0) {
               // console.log(`Day of birth: ${day0fWeekArr[0]} and your Akan name is ${feminine_names[0]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Monday : your Akan name is " + feminine_names[0];
+              document.getElementById('results').textContent = "Your Birthday was on a Monday : your Akan name is " + feminine_names[0];
 
             }else if (d == 1 || d == -1) {
               // console.log(`Day of birth: ${day0fWeekArr[1]} and your Akan name is ${feminine_names[1]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Tuesday : your Akan name is " + feminine_names[1];
+              document.getElementById('results').textContent = "Your Birthday was on a Tuesday : your Akan name is " + feminine_names[1];
 
             }else if (d == 2 || d == -2) {
               // console.log(`Day of birth: ${day0fWeekArr[2]} and your Akan name is ${feminine_names[2]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Wednesday : your Akan name is " + feminine_names[2];
+              document.getElementById('results').textContent = "Your Birthday was on a Wednesday : your Akan name is " + feminine_names[2];
 
             }else if (d == 3 || d == -3) {
               // console.log(`Day of birth: ${day0fWeekArr[3]} and your Akan name is ${feminine_names[3]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Thursday : your Akan name is " + feminine_names[3];
+              document.getElementById('results').textContent = "Your Birthday was on a Thursday : your Akan name is " + feminine_names[3];
 
             }else if (d == 4 || d == -4) {
               // console.log(`Day of birth: ${day0fWeekArr[4]} and your Akan name is ${feminine_names[4]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Friday : your Akan name is " + feminine_names[4];
+              document.getElementById('results').textContent = "Your Birthday was on a Friday : your Akan name is " + feminine_names[4];
 
             }else if (d == 5 || d == -5) {
               // console.log(`Day of birth: ${day0fWeekArr[5]} and your Akan name is ${feminine_names[5]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Saturday : your Akan name is " + feminine_names[5];
+              document.getElementById('results').textContent = "Your Birthday was on a Saturday : your Akan name is " + feminine_names[5];
 
             }else if (d == 6 || d == -6) {
               // console.log(`Day of birth: ${day0fWeekArr[6]} and your Akan name is ${feminine_names[6]}`);
-              document.getElementById('result').textContent = "Your Birthday was on a Sunday : your Akan name is " + feminine_names[6];
+              document.getElementById('results').textContent = "Your Birthday was on a Sunday : your Akan name is " + feminine_names[6];
 
             }else if (d >= 7) {
               alert(`Index out of bounds: ${d}`);
@@ -125,5 +125,8 @@ function getInput() {
       break;
     }
   }
-  
+  let run = () => {
+    getInput();
+    calculate();
+}
 
