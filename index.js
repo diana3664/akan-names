@@ -13,32 +13,6 @@ function getInput() {
   MM = getMonthBirth;
   DD = getDayBirth;
   }
-  
-  // function monthValidator () {
-  //   if (getMonthBirth < 1 || getMonthBirth > 12) {
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-
-  //   function dayValidator () {
-  //     if (monthOfBirth === 1 && Number(getYearBirth)%4 === 0) {
-  //       if (getDayBirth > 28 || getDayBirth < 1) {
-  //         return false;
-  //       } else if (getMonthBirth === 1 && getDayBirth > 29) {
-  //         return false;
-  //       } else if (getMonthBirth === 1 && getDayBirth < 1) {
-  //         return false;
-  //       } else {
-  //         return true;
-  //       }
-  //     } else if (getDayBirth < 1 || getDayBirth > 31){
-  //       return false;
-  //     } else {
-  //       return true;
-  //     }
-  //   }
-
   function calculate() {
   let masculine_names = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   let feminine_names = ["Akosua", "Adowoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
